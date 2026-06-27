@@ -44,3 +44,9 @@ app.listen(PORT, () => {
   console.log(`✅  Todo API server running on http://localhost:${PORT}`);
   console.log(`📋  Endpoints available at http://localhost:${PORT}/api/todos`);
 });
+
+app.get("/", (req, res) => {
+  res.send("Todo API is running 🚀");
+});
+
+app.use("/api/todos", todoRoutes);
