@@ -4,10 +4,12 @@ import axios from 'axios';
  * Axios instance configured with the base URL for the Todo API.
  * The proxy setting in package.json forwards /api requests to http://localhost:5000.
  */
+
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 
