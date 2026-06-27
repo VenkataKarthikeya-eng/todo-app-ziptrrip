@@ -7,6 +7,12 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+import cors from "cors";
+
+app.use(cors({
+  origin: "*"
+}));
+
 // --------------- Middleware ---------------
 
 // Parse incoming JSON request bodies
