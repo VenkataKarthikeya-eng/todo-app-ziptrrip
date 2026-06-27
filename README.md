@@ -1,3 +1,4 @@
+
 # 📝 Ziptrick Todo Application
 
 A full-stack **Todo Application** built with **React** and **Node.js/Express** as part of the Ziptrick developer assignment. The application features a clean multi-page architecture, full CRUD operations, and a polished, production-grade UI.
@@ -188,3 +189,6 @@ Shows the full details of a single todo including title, description, status, pr
 ## 📝 License
 
 This project was created as part of the Ziptrick developer assignment.
+
+
+
