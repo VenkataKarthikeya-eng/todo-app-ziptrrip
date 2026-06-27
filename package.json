@@ -1,0 +1,16 @@
+{
+  "name": "ziptrick-todo-app",
+  "version": "1.0.0",
+  "description": "Full-stack Todo application for Ziptrick developer assignment",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm run install:server && npm run install:client",
+    "start:server": "cd server && npm run dev",
+    "start:client": "cd client && npm start",
+    "dev": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

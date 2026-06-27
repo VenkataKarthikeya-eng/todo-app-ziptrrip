@@ -1,0 +1,29 @@
+[
+  {
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "title": "Design database schema",
+    "description": "Draft the ER diagram and define table relationships for the application.",
+    "status": "pending",
+    "priority": "high",
+    "createdAt": "2026-06-26T10:15:00.000Z",
+    "updatedAt": "2026-06-26T10:15:00.000Z"
+  },
+  {
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "title": "Write unit tests for auth module",
+    "description": "Cover login, registration, and token refresh flows with Jest tests.",
+    "status": "pending",
+    "priority": "medium",
+    "createdAt": "2026-06-27T08:45:00.000Z",
+    "updatedAt": "2026-06-27T08:45:00.000Z"
+  },
+  {
+    "id": "7610c856-327a-4364-90d9-1792ac5830cc",
+    "title": "Set up project repository",
+    "description": "Initialize Git repository, add README file, and configure CI/CD pipeline.",
+    "status": "completed",
+    "priority": "high",
+    "createdAt": "2026-06-27T17:16:31.582Z",
+    "updatedAt": "2026-06-27T17:16:33.943Z"
+  }
+]
