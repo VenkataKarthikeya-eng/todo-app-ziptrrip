@@ -37,6 +37,20 @@ A full-stack **Todo Application** built with **React** and **Node.js/Express** a
 - 🔗 Backend (Render): https://todo-app-ziptrrip.onrender.com  
 - 🔗 API Endpoint: https://todo-app-ziptrrip.onrender.com/api/todos
 
+## 🖼 Application Screenshots
+
+### 🏠 Home Page (Todo List)
+![Todo List](./Screenshots/home.png)
+
+### ➕ Add Todo Feature
+![Add Todo](./Screenshots/add.png)
+
+### ✏️ Edit Todo Page
+![Edit Todo](./Screenshots/edit.png)
+
+### 📱 Responsive Mobile View
+![Mobile View](./Screenshots/mobile.png)
+
 ## 📋 Prerequisites
 
 - **Node.js** — version 16 or higher
