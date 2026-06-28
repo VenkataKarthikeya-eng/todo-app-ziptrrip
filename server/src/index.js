@@ -12,13 +12,10 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(morgan('dev'));
 
-// ✅ FIXED CORS (IMPORTANT FOR VERCEL)
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://todo-app-ziptrzip.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"]
+  origin: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 
 // ---------------- Routes ----------------
