@@ -4,6 +4,9 @@
 A full-stack **Todo Application** built with **React** and **Node.js/Express** as part of the Ziptrick developer assignment. The application features a clean multi-page architecture, full CRUD operations, and a polished, production-grade UI.
 
 ---
+## 🚀 Project Overview
+
+Ziptrick Todo Application is a full-stack task management system that allows users to create, update, delete, and track tasks efficiently. It follows a clean REST API architecture with a React frontend and Node.js backend, deployed on Vercel and Render for production use.
 
 ## ✨ Features
 
