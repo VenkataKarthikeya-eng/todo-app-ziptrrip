@@ -31,6 +31,12 @@ A full-stack **Todo Application** built with **React** and **Node.js/Express** a
 
 ---
 
+## 🌐 Live Demo
+
+- 🔗 Frontend (Vercel): https://todo-app-ziptrrip.vercel.app  
+- 🔗 Backend (Render): https://todo-app-ziptrrip.onrender.com  
+- 🔗 API Endpoint: https://todo-app-ziptrrip.onrender.com/api/todos
+
 ## 📋 Prerequisites
 
 - **Node.js** — version 16 or higher
