@@ -5,6 +5,13 @@ A full-stack **Todo Management Application** built using **React (Frontend)** an
 This project demonstrates a **production-style full-stack architecture** with REST APIs, multi-page routing, modular backend structure, and clean UI/UX design.
 
 ---
+## 🌐 Live Deployment
+
+- 🔗 **Frontend (Vercel):** https://todo-app-ziptrrip.vercel.app  
+- 🔗 **Backend (Render):** https://todo-app-ziptrrip.onrender.com  
+- 🔗 **API Endpoint:** https://todo-app-ziptrrip.onrender.com/api/todos  
+
+---
 
 ## 🚀 Project Overview
 
@@ -62,28 +69,24 @@ Built using **React Router (Multi-Page Architecture)**:
 
 ---
 
-## 🌐 Live Deployment
 
-- 🔗 **Frontend (Vercel):** https://todo-app-ziptrrip.vercel.app  
-- 🔗 **Backend (Render):** https://todo-app-ziptrrip.onrender.com  
-- 🔗 **API Endpoint:** https://todo-app-ziptrrip.onrender.com/api/todos  
 
----
-
-## 🖼 Application Preview
+## 🖼 Application Screenshots
 
 ### 🏠 Home Page (Todo List)
-![Todo List](./Screenshots/home.png)
+![Home](./Screenshots/home.png)
 
-### ➕ Add Todo
-![Add Todo](./Screenshots/add.png)
+### ➕ Add Todo Feature
+![Add](./Screenshots/add.png)
 
-### ✏️ Edit Todo
-![Edit Todo](./Screenshots/edit.png)
+### ✏️ Edit Todo Page
+![Edit](./Screenshots/edit.png)
 
-### 📱 Mobile Responsive View
-![Mobile View](./Screenshots/mobile.png)
+### 📄 Todo Detail Page  ⭐ (NEW)
+![Detail](./Screenshots/detail.png)
 
+### 📱 Responsive Mobile View
+![Mobile](./Screenshots/mobile.png)
 ---
 
 ## 📋 Prerequisites
@@ -127,6 +130,7 @@ Frontend → http://localhost:3000
 Backend → http://localhost:5000/api/todos
 
 📡 API Endpoints
+
 | Method | Endpoint       | Description       |
 | ------ | -------------- | ----------------- |
 | GET    | /api/todos     | Fetch all todos   |
@@ -148,6 +152,7 @@ Backend → http://localhost:5000/api/todos
 }
 
 📁 Project Structure
+
 todo-app/
 ├── server/
 │   ├── data/
@@ -166,26 +171,32 @@ todo-app/
         └── styles/
 
 📄 Application Pages
+
 🏠 Todo List Page (/)
 Display all todos
 Add new todos
 Filter by status
 Toggle completion status
 Navigate to detail page
+
 📄 Todo Detail Page (/todo/:id)
+
 Fetch todo using URL parameter
 View full details
 Edit fields inline
 Save updates
 Delete todo
 Navigate back
+
 📌 Assumptions
+
 File-Based Storage: Todos are stored in a JSON file for development/demo purposes. In production, this should be replaced with a database like MongoDB or PostgreSQL.
 No Authentication: The system does not implement authentication or authorization.
 Single User System: Designed for single-user usage only.
 Default Priority: If not specified, priority defaults to medium.
 Default Status: New todos are created with pending status.
 API Proxy: Development server proxies API requests to http://localhost:5000.
+
 📝 License
 
 This project was developed as part of the Ziptrick Developer Assignment Evaluation.
