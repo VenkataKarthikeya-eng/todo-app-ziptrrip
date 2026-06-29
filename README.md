@@ -82,7 +82,7 @@ Built using **React Router (Multi-Page Architecture)**:
 ### ✏️ Edit Todo Page
 ![Edit](./Screenshots/edit.png)
 
-### 📄 Todo Detail Page  ⭐ (NEW)
+### 📄 Todo Detail Page  
 ![Detail](./Screenshots/detail.png)
 
 ### 📱 Responsive Mobile View
