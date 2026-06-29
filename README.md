@@ -1,6 +1,6 @@
 # 📝 Ziptrrip Todo Application (Full-Stack MERN-Style Project)
 
-A full-stack **Todo Management Application** built using **React (Frontend)** and **Node.js / Express (Backend)** as part of the Ziptrick developer assignment.
+A full-stack **Todo Management Application** built using **React (Frontend)** and **Node.js / Express (Backend)** as part of the Ziptrrip developer assignment.
 
 This project demonstrates a **production-style full-stack architecture** with REST APIs, multi-page routing, modular backend structure, and clean UI/UX design.
 
@@ -15,7 +15,7 @@ This project demonstrates a **production-style full-stack architecture** with RE
 
 ## 🚀 Project Overview
 
-The Ziptrick Todo Application is a task management system that enables users to efficiently create, update, delete, and manage tasks.
+The Ziptrrip Todo Application is a task management system that enables users to efficiently create, update, delete, and manage tasks.
 
 It follows a **client-server architecture**:
 
@@ -199,4 +199,4 @@ API Proxy: Development server proxies API requests to http://localhost:5000.
 
 📝 License
 
-This project was developed as part of the Ziptrick Developer Assignment Evaluation.
+This project was developed as part of the Ziptrrip Developer Assignment Evaluation.

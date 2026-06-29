@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand">
           <span className="navbar-logo">✓</span>
           <span className="navbar-title">Todo App</span>
-          <span className="navbar-subtitle">Ziptrick</span>
+          <span className="navbar-subtitle">Ziptrrip</span>
         </Link>
         <div className="navbar-links">
           <Link
