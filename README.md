@@ -1,217 +1,191 @@
+# 📝 Ziptrick Todo Application (Full-Stack MERN-Style Project)
 
-# 📝 Ziptrick Todo Application
+A full-stack **Todo Management Application** built using **React (Frontend)** and **Node.js / Express (Backend)** as part of the Ziptrick developer assignment.
 
-A full-stack **Todo Application** built with **React** and **Node.js/Express** as part of the Ziptrick developer assignment. The application features a clean multi-page architecture, full CRUD operations, and a polished, production-grade UI.
+This project demonstrates a **production-style full-stack architecture** with REST APIs, multi-page routing, modular backend structure, and clean UI/UX design.
 
 ---
+
 ## 🚀 Project Overview
 
-Ziptrick Todo Application is a full-stack task management system that allows users to create, update, delete, and track tasks efficiently. It follows a clean REST API architecture with a React frontend and Node.js backend, deployed on Vercel and Render for production use.
+The Ziptrick Todo Application is a task management system that enables users to efficiently create, update, delete, and manage tasks.
 
-## ✨ Features
+It follows a **client-server architecture**:
 
-- **Create Todos** — Add new tasks with title, optional description, and priority level (Low / Medium / High)
-- **View Todos** — Browse all todos in a clean, organized list
-- **Update Todos** — Inline editing on the detail page for any field
-- **Delete Todos** — Remove todos with a confirmation dialog
-- **Toggle Status** — Quickly switch between Pending and Completed with a checkbox
-- **Filter by Status** — View All, Pending, or Completed todos using filter buttons
-- **Multi-Page Navigation** — Separate pages for the todo list and individual todo details using React Router
-- **Responsive Design** — Works seamlessly across desktop, tablet, and mobile screens
-- **Error Handling** — Graceful error states with user-friendly messages
-- **Loading States** — Visual feedback during API operations
+- **Frontend:** React-based UI with multi-page routing
+- **Backend:** Node.js + Express REST API
+- **Storage:** JSON file-based persistence (development-ready architecture)
+
+---
+
+## ✨ Key Features
+
+### 🧩 Task Management
+- Create todos with title, description, and priority (Low / Medium / High)
+- View all todos in a structured, organized list
+- Update todos using inline editing on the detail page
+- Delete todos with confirmation dialog
+- Toggle status between **Pending ↔ Completed**
+
+### 📊 User Interface & Experience
+- Clean and responsive UI across all devices
+- Priority indicators (Low / Medium / High)
+- Status badges for task tracking
+- Loading states for API interactions
+- Error handling with user-friendly messages
+- Empty state handling for better UX
+
+### 🧭 Multi-Page Navigation
+Built using **React Router (Multi-Page Architecture)**:
+
+- **Todo List Page (`/`)**
+  - View all todos
+  - Add new todos
+  - Filter by status (All / Pending / Completed)
+
+- **Todo Detail Page (`/todo/:id`)**
+  - View complete todo details
+  - Inline edit and update fields
+  - Delete todo with confirmation
+  - Navigate back to list
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer        | Technology                        |
-| ------------ | --------------------------------- |
-| **Frontend** | React 18, React Router v6, Axios  |
-| **Backend**  | Node.js, Express.js, UUID         |
-| **Storage**  | JSON file-based persistence       |
-| **Tooling**  | Create React App, Concurrently    |
+| Layer      | Technology                          |
+|------------|-------------------------------------|
+| Frontend   | React 18, React Router v6, Axios    |
+| Backend    | Node.js, Express.js, UUID           |
+| Storage    | JSON File-Based Persistence         |
+| Tooling    | Create React App, Concurrently      |
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Deployment
 
-- 🔗 Frontend (Vercel): https://todo-app-ziptrrip.vercel.app  
-- 🔗 Backend (Render): https://todo-app-ziptrrip.onrender.com  
-- 🔗 API Endpoint: https://todo-app-ziptrrip.onrender.com/api/todos
+- 🔗 **Frontend (Vercel):** https://todo-app-ziptrrip.vercel.app  
+- 🔗 **Backend (Render):** https://todo-app-ziptrrip.onrender.com  
+- 🔗 **API Endpoint:** https://todo-app-ziptrrip.onrender.com/api/todos  
 
-## 🖼 Application Screenshots
+---
+
+## 🖼 Application Preview
 
 ### 🏠 Home Page (Todo List)
 ![Todo List](./Screenshots/home.png)
 
-### ➕ Add Todo Feature
+### ➕ Add Todo
 ![Add Todo](./Screenshots/add.png)
 
-### ✏️ Edit Todo Page
+### ✏️ Edit Todo
 ![Edit Todo](./Screenshots/edit.png)
 
-### 📱 Responsive Mobile View
+### 📱 Mobile Responsive View
 ![Mobile View](./Screenshots/mobile.png)
+
+---
 
 ## 📋 Prerequisites
 
-- **Node.js** — version 16 or higher
-- **npm** — version 8 or higher (comes with Node.js)
+- Node.js (v16+ recommended)
+- npm (v8+ included with Node.js)
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
-
+### 1️⃣ Clone Repository
 ```bash
 git clone <repository-url>
 cd todo-app
-```
 
-### 2. Install Dependencies
-
-Install both server and client dependencies with a single command:
-
-```bash
+2️⃣ Install Dependencies
 npm run install:all
-```
 
-Or install them individually:
+Or install manually:
 
-```bash
-# Server dependencies
+# Backend
 cd server && npm install
 
-# Client dependencies
+# Frontend
 cd client && npm install
-```
 
-### 3. Start the Application
-
-**Run both servers concurrently (recommended):**
-
-```bash
+3️⃣ Run Application
 npm run dev
-```
 
-**Or start them individually in separate terminals:**
+Or run separately:
 
-```bash
-# Terminal 1 — Backend (http://localhost:5000)
+# Backend
 npm run start:server
 
-# Terminal 2 — Frontend (http://localhost:3000)
+# Frontend
 npm run start:client
-```
 
-### 4. Open in Browser
+4️⃣ Access Application
+Frontend → http://localhost:3000
+Backend → http://localhost:5000/api/todos
 
-- **Frontend:** [http://localhost:3000](http://localhost:3000)
-- **Backend API:** [http://localhost:5000/api/todos](http://localhost:5000/api/todos)
+📡 API Endpoints
+| Method | Endpoint       | Description       |
+| ------ | -------------- | ----------------- |
+| GET    | /api/todos     | Fetch all todos   |
+| GET    | /api/todos/:id | Fetch single todo |
+| POST   | /api/todos     | Create new todo   |
+| PUT    | /api/todos/:id | Update todo       |
+| DELETE | /api/todos/:id | Delete todo       |
 
----
+🧾 Data Model
 
-## 📡 API Endpoints
-
-| Method   | Endpoint          | Description              | Request Body                                         | Response            |
-| -------- | ----------------- | ------------------------ | ---------------------------------------------------- | ------------------- |
-| `GET`    | `/api/todos`      | List all todos           | —                                                    | `Array<Todo>`       |
-| `GET`    | `/api/todos?status=pending` | List filtered todos | —                                                 | `Array<Todo>`       |
-| `GET`    | `/api/todos/:id`  | Get a single todo        | —                                                    | `Todo`              |
-| `POST`   | `/api/todos`      | Create a new todo        | `{ title, description?, priority? }`                 | `Todo`              |
-| `PUT`    | `/api/todos/:id`  | Update a todo            | `{ title?, description?, status?, priority? }`       | `Todo`              |
-| `DELETE` | `/api/todos/:id`  | Delete a todo            | —                                                    | `204 No Content`    |
-
-### Todo Object Shape
-
-```json
 {
   "id": "uuid-string",
   "title": "string",
   "description": "string",
   "status": "pending | completed",
   "priority": "low | medium | high",
-  "createdAt": "ISO 8601 timestamp",
-  "updatedAt": "ISO 8601 timestamp"
+  "createdAt": "ISO timestamp",
+  "updatedAt": "ISO timestamp"
 }
-```
 
----
-
-## 📁 Folder Structure
-
-```
+📁 Project Structure
 todo-app/
-├── package.json                  # Root scripts (install:all, dev)
-├── README.md                     # Project documentation
-│
-├── server/                       # Backend (Node.js + Express)
-│   ├── package.json
-│   ├── .gitignore
+├── server/
 │   ├── data/
-│   │   └── todos.json            # JSON file-based storage (seed data)
-│   └── src/
-│       ├── index.js              # Express server entry point
-│       ├── routes/
-│       │   └── todos.js          # RESTful route definitions
-│       ├── controllers/
-│       │   └── todosController.js # Business logic for CRUD ops
-│       ├── models/
-│       │   └── Todo.js           # File-based persistence layer
-│       └── middleware/
-│           ├── validate.js       # Request validation (POST/PUT)
-│           └── errorHandler.js   # Centralized error handler
+│   ├── src/
+│   │   ├── routes/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   └── middleware/
 │
-└── client/                       # Frontend (React)
-    ├── package.json
+└── client/
     ├── public/
-    │   └── index.html            # HTML entry point
-    └── src/
-        ├── index.js              # React entry point
-        ├── App.js                # Routes & layout
+    ├── src/
         ├── components/
-        │   ├── Navbar.js         # Navigation bar
-        │   ├── TodoForm.js       # New todo creation form
-        │   └── TodoItem.js       # Todo list item component
         ├── pages/
-        │   ├── TodoListPage.js   # Main list page (CRUD + filter)
-        │   └── TodoDetailPage.js # Single todo detail page
         ├── services/
-        │   └── api.js            # Axios API service layer
         └── styles/
-            └── App.css           # Global styles & design tokens
-```
 
----
+📄 Application Pages
+🏠 Todo List Page (/)
+Display all todos
+Add new todos
+Filter by status
+Toggle completion status
+Navigate to detail page
+📄 Todo Detail Page (/todo/:id)
+Fetch todo using URL parameter
+View full details
+Edit fields inline
+Save updates
+Delete todo
+Navigate back
+📌 Assumptions
+File-Based Storage: Todos are stored in a JSON file for development/demo purposes. In production, this should be replaced with a database like MongoDB or PostgreSQL.
+No Authentication: The system does not implement authentication or authorization.
+Single User System: Designed for single-user usage only.
+Default Priority: If not specified, priority defaults to medium.
+Default Status: New todos are created with pending status.
+API Proxy: Development server proxies API requests to http://localhost:5000.
+📝 License
 
-## 📄 Pages
-
-### Todo List Page (`/`)
-
-The main page of the application. Displays the add-todo form at the top, followed by filter buttons and the complete list of todos. Each todo shows its title, status badge, priority badge, and creation date. Clicking a todo navigates to its detail page.
-
-### Todo Detail Page (`/todo?id=<todoId>`)
-
-Shows the full details of a single todo including title, description, status, priority, and timestamps. Supports inline editing — click "Edit" to modify any field, then "Save" to persist changes. Includes a delete button with confirmation and a back link to return to the list.
-
----
-
-## 📌 Assumptions
-
-- **File-Based Storage** — Todos are persisted in a JSON file on the server. This is suitable for development and demonstration purposes but would be replaced with a database (e.g., MongoDB, PostgreSQL) in production.
-- **No Authentication** — The application does not implement user authentication or authorization. All todos are globally accessible.
-- **Single User** — The app is designed for single-user use. Concurrent multi-user access to the JSON file is not handled.
-- **Default Priority** — If no priority is specified when creating a todo, it defaults to `medium`.
-- **Default Status** — New todos are created with a `pending` status.
-- **Client-Side Proxy** — The React development server proxies API requests to the backend at `http://localhost:5000`. In production, a reverse proxy (e.g., Nginx) or environment variable would be used.
-
----
-
-## 📝 License
-
-This project was created as part of the Ziptrick developer assignment.
-
-
-
+This project was developed as part of the Ziptrick Developer Assignment Evaluation.

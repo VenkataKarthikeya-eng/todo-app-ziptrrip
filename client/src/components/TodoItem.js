@@ -72,7 +72,7 @@ const TodoItem = ({ todo, onToggleStatus, onDelete }) => {
         </button>
       </div>
 
-      <Link to={`/todo?id=${todo.id}`} className="todo-item-content">
+      <Link to={`/todo/${todo.id}`} className="todo-item-content">
         <div className="todo-item-header">
           <h3 className={`todo-item-title ${isCompleted ? 'title-completed' : ''}`}>
             {todo.title}

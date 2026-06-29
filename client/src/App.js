@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TodoListPage from './pages/TodoListPage';
 import TodoDetailPage from './pages/TodoDetailPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<TodoListPage />} />
-          <Route path="/todo" element={<TodoDetailPage />} />
+          <Route path="/todo/:id" element={<TodoDetailPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <footer className="footer">
       <p>Built by <b>Cherukuri Venkata Karthikeya</b> | Ziptrrip Assignment</p>

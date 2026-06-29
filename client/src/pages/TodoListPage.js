@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import TodoForm from '../components/TodoForm';
 import TodoItem from '../components/TodoItem';
+import { useToast } from '../components/Toast';
 import { fetchTodos, createTodo, updateTodo, deleteTodo } from '../services/api';
 
 /**
@@ -21,6 +22,7 @@ const TodoListPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const { addToast, ToastContainer } = useToast();
 
   /**
    * Fetch todos from the API, optionally filtered by status.
@@ -58,11 +60,13 @@ const TodoListPage = () => {
       if (!filter || filter === 'pending') {
         setTodos((prev) => [newTodo, ...prev]);
       }
+      addToast(`"${newTodo.title}" created successfully`, 'success');
       return true;
     } catch (err) {
       const message =
         err.response?.data?.error || err.message || 'Failed to create todo.';
       setError(message);
+      addToast('Failed to create todo', 'error');
       return false;
     } finally {
       setIsSubmitting(false);
@@ -86,6 +90,7 @@ const TodoListPage = () => {
           prev.map((t) => (t.id === id ? updatedTodo : t))
         );
       }
+      addToast(`Marked as ${newStatus}`, 'success');
     } catch (err) {
       const message =
         err.response?.data?.error || err.message || 'Failed to update todo.';
@@ -100,16 +105,21 @@ const TodoListPage = () => {
     try {
       await deleteTodo(id);
       setTodos((prev) => prev.filter((t) => t.id !== id));
+      addToast('Todo deleted', 'success');
     } catch (err) {
       const message =
         err.response?.data?.error || err.message || 'Failed to delete todo.';
       setError(message);
+      addToast('Failed to delete todo', 'error');
     }
   };
 
   return (
     <div className="page todo-list-page">
       <div className="container">
+        {/* Toast Notifications */}
+        <ToastContainer />
+
         {/* Add Todo Form */}
         <TodoForm onSubmit={handleCreateTodo} isSubmitting={isSubmitting} />
 

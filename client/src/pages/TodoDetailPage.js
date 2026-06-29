@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { fetchTodoById, updateTodo, deleteTodo } from '../services/api';
 
 /**
  * TodoDetailPage — Displays a single todo's full details.
- * Reads the todo ID from the ?id= query parameter.
+ * Reads the todo ID from the URL path parameter (/todo/:id).
  * Supports inline editing, updating, and deleting.
  */
 const TodoDetailPage = () => {
-  const [searchParams] = useSearchParams();
+  const { id: todoId } = useParams();
   const navigate = useNavigate();
-  const todoId = searchParams.get('id');
 
   const [todo, setTodo] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -322,6 +321,12 @@ const TodoDetailPage = () => {
                 </span>
               )}
             </div>
+          </div>
+
+          {/* Todo ID */}
+          <div className="detail-field">
+            <label className="detail-label">Todo ID</label>
+            <span className="detail-id">{todo.id}</span>
           </div>
 
           {/* Timestamps */}
