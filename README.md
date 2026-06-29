@@ -1,4 +1,4 @@
-# 📝 Ziptrip Todo Application (Full-Stack MERN-Style Project)
+# 📝 Ziptrrip Todo Application (Full-Stack MERN-Style Project)
 
 A full-stack **Todo Management Application** built using **React (Frontend)** and **Node.js / Express (Backend)** as part of the Ziptrick developer assignment.
 
